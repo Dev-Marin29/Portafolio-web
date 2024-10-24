@@ -1,0 +1,130 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;  /* Color de fondo suave */
+    color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #008080;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;  /* Color dorado cuando pasas el ratón */
+}
+
+/* Estilo para las secciones */
+section {
+    padding: 2.5em;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombras suaves */
+}
+
+/* Estilos para el título principal de la sección */
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #008080;
+}
+
+/* Estilo de los párrafos */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Ofertas de la semana */
+#descuento-semanal img {
+    display: block;
+    margin-top: 15px;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;  /* Bordes redondeados a la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombras */
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 15px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffd700;  /* Color dorado al hacer hover */
+}
+
+/* Banner de servicio a domicilio */
+.banner {
+    background-color: #ffcc00; /* Color de fondo amarillo */
+    color: #000;               /* Color de texto negro */
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    overflow: hidden;          /* Oculta el contenido que se sale del banner */
+}
+
+.banner p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveBanner 10s linear infinite;  /* Animación que hace que se mueva */
+}
+
+/* Definir la animación de movimiento horizontal */
+@keyframes moveBanner {
+    0% {
+        transform: translateX(100%); /* Comienza fuera del área visible */
+    }
+    100% {
+        transform: translateX(-100%); /* Se mueve hasta el otro lado */
+    }
+}

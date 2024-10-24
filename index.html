@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado La Canasta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Banner superior de servicio a domicilio -->
+    <div class="banner">
+        <p>¡Servicio a domicilio gratis en todos los pedidos!</p>
+    </div>
+
+    <!-- Encabezado y navegación -->
+    <header>
+        <h1>Supermercado La Canasta</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#ofertas">Ofertas Semanales</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="inicio">
+        <h2>Bienvenido a La Canasta</h2>
+        <p>Ofrecemos los mejores productos frescos con descuentos exclusivos cada semana.</p>
+    </section>
+
+    <!-- Sección de ofertas -->
+    <section id="ofertas">
+        <h2>Ofertas de la Semana</h2>
+        <div id="descuento-semanal">
+            <!-- Aquí se mostrará el descuento dinámico -->
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Banner inferior de servicio a domicilio -->
+    <div class="banner banner-inferior">
+        <p>¡Servicio a domicilio gratis en todos los pedidos!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
